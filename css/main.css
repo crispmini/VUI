@@ -138,8 +138,63 @@ body {
   padding-right: 3em;
 }
 
-.right-col div {
+.right-col > div {
   margin: 1em;
+  padding: 1em;
+  width: 400px;
+}
+
+.edit-btn-group {
   background-color: #ffffff;
   border: 1px solid #b9b9b9;
+  color: #606060;
+  font-weight: 800;
+}
+
+.edit-btn-group button {
+  margin: 0em;
+  background-color: inherit;
+  border: none;
+  width: 175px;
+  color: #606060;
+  font-weight: 800;
+}
+
+#edit {
+  border-right: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#change-status {
+  margin-left: -27px;
+  border-left: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#merge {
+  border-right: 1px solid #d3d3d3;
+  border-top: 1px solid #d3d3d3;
+}
+
+#add-to-faq {
+  margin-left: -27px;
+  border-left: 1px solid #d3d3d3;
+  border-top: 1px solid #d3d3d3;
+}
+
+.follow-up {
+  height: 2.4em;
+  background-color: #ffffff;
+  border: 1px solid #b9b9b9;
+  border-right: none;
+  color: #606060;
+  font-weight: 800;
+}
+
+#schedule-follow-up {
+  color: #ffffff;
+  background-color: #16aa9c;
+  border: none;
+  border-radius: 0.1em;
+  height: 2.4em;
 }

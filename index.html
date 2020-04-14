@@ -77,14 +77,26 @@
 
             <div class="right-col">
                 <div class="edit-btn-group">
-                    <button>Edit</button>
-                    <button>Change Status</button>
-                    <button>Merge</button>
-                    <button>Add to FAQ</button>
+                    <div class="row">
+                        <div class="col-6"><button id="edit">Edit</button></div>
+                        <div class="col-6"><button id="change-status">Change Status</button></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"><button id="merge">Merge</button></div>
+                        <div class="col-6"><button id="add-to-faq">Add to FAQ</button></div>
+                    </div>
                 </div>
 
-                <div class="follow-up">
-                    <input type="checkbox"><p>Follow Up</p>
+                <div class="follow-up-group">
+                    <div class="row">
+                        <div class="col-10 follow-up d-flex">
+                            <div class=""><input type="checkbox">Follow Up</div>
+                            <div class="ml-auto">March 10, 2017</div>
+                        </div>
+                        <div class="col-2 d-inline ml-auto">
+                            <button id="schedule-follow-up" class="">btn</button>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="add-tags">
