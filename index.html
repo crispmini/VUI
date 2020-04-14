@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vantage UI Screening Test</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/main.js" ></script>
+</head>
+
+<body>
+
+<div class="band-search-bar col-12">
+    <form>
+        <input type="text" class="search-bar">
+    </form>
+</div>
+
+<div class="page-content col-12">
+    <div class="tab-ticket">
+        <!-- function openTab(evt, tabs, tabContent, tabName)  -->
+        <button class="ticket-links" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket1')">Ticket 1</button>
+        <button class="ticket-links" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket2')">Ticket 2</button>
+        <button class="ticket-links" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket3')">Ticket 3</button>
+        <button class="ticket-add-new" onclick="newTicket()">Add New</button>
+    </div>
+
+    <div id="ticket1" class="ticket">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <div class="tab-content">
+                    <!-- function openTab(evt, tabs, tabContent, tabName)  -->
+                    <button class="ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'message')">Message</button>
+                    <button class="ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'contact-info')">Contact Info</button>
+                    <button class="ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'faq')">FAQ</button>
+                </div>
+
+                <div id="message" class="ticket-content">
+                    <h3>Help! Issues Logging In</h3>
+                    <div class="message-content">
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="message-date" class="float-right">March 08, 2017 2:03 PM</div>
+                                <p>Hello Support,<br>
+                                    <br>
+                                I am unable to login to my account. I tried resetting my password but I still cannot login. Can you please help.<br>
+                                    <br>
+                                Thank you,<br>
+                                Customer</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end">
+                            <button id= "reply" class="message-action"></button>
+                            <button id="forward" class="message-action"></button>
+                            <button id="comment" class="message-action">Comment</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact-info" class="ticket-content">
+                    <h3>Contact Info</h3>
+                    <p>Contact Info content</p> 
+                </div>
+
+                <div id="faq" class="ticket-content">
+                    <h3>FAQ</h3>
+                    <p>Frequently Asked Questions</p>
+                </div>
+            </div>
+
+            <div class="right-col">
+                <div class="edit-btn-group">
+                    <button>Edit</button>
+                    <button>Change Status</button>
+                    <button>Merge</button>
+                    <button>Add to FAQ</button>
+                </div>
+
+                <div class="follow-up">
+                    <input type="checkbox"><p>Follow Up</p>
+                </div>
+
+                <div class="add-tags">
+                    <input type="text" value="Add Tags">
+                </div>
+
+                <div class="ticket-specs">
+                    <h3>Login Issue</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ticket2" class="ticket">
+        <h3>Ticket 2</h3>
+    </div>
+
+    <div id="ticket3" class="ticket">
+        <h3>Ticket 3</h3>
+    </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

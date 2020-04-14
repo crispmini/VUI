@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  font-family: Arial;
+  font-size: 0.8rem;
+}
+
+.band-search-bar {
+  background-color: #36404a;
+}
+
+.search-bar {
+  background-color: #4b535e;
+  margin: 1em;
+  border: 0em;
+  border-radius: 1em;
+  line-height: 1.4em;
+}
+
+/* everything under the search bar */
+.page-content {
+  padding-top: 0.4em;
+  padding-left: 0em;
+  padding-right: 0em;
+  background-color: #16aa9c;
+}
+
+/* Tabs for the different tickets */
+.tab-ticket {
+  overflow: hidden;
+  border: none;
+}
+
+.tab-ticket button {
+  color: #087D74;
+  background-color: #0E978D;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5em;
+  width: 10em;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.tab-ticket button:hover {
+}
+
+.tab-ticket button.active {
+  color: #16aa9c;
+  background-color: #F4F8F7;
+}
+
+.tab-ticket .ticket-add-new {
+  color: #9BC6BD;
+  background-color: #0C8B80;
+}
+
+/* The ticket */
+.ticket {
+  display: none;
+  padding: 2em;
+  background-color: #f4f8f7;
+  border: 1px solid #f4f8f7;
+  border-top: none;
+}
+
+/* Tabs of the contents of a ticket */
+.tab-content {
+  overflow: hidden;
+  background-color: #f4f8f7;
+}
+
+.tab-content button {
+  color: #b9b9b9;
+  background-color: #f2f2f2;
+  border: 1px solid #b9b9b9;
+  float: inline-start;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5em;
+  width: 10em;
+  font-size: 1.0rem;
+  font-weight: 600;
+}
+
+.tab-content button:hover {
+}
+
+.tab-content button.active {
+  color: #a3a3a3;
+  background-color: #fff;
+}
+
+/* The ticket contents */
+.ticket-content {
+  display: none;
+  padding: 0.6em 1.2em;
+  background-color: #fff;
+  border: 1px solid #b9b9b9;
+  border-radius: 0em 0.5em 0.5em 0.5em;
+}
+
+/* Message */
+#message h3 {
+  margin: 0.4em 0.4em 0.8em 0.4em;
+  color: #006359;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.message-content {
+  margin: 0.4em;
+  padding: 1em;
+  color: #5B5F62;
+  background-color: #F4F8FB;
+  border: 1px solid #b9b9b9;
+  border-radius: 0.5em;
+}
+
+#message-date {
+  color: #9DA1A4;
+}
+
+.message-action {
+  margin: 0.4em;
+  padding: 0.6em;
+  color: #ffffff;
+  background-color: #16aa9c;
+  border: none;
+  border-radius: 0.1em;
+}
+
+#comment {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.right-col div {
+  margin: 1em;
+  background-color: #ffffff;
+  border: 1px solid #b9b9b9;
+}
