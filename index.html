@@ -24,7 +24,7 @@
 
 <div class="page-content col-12">
     <div class="tab-ticket">
-        <!-- function openTab(evt, tabs, tabContent, tabName)  -->
+        <!-- function openTab(evt, tabs, content, tabName)  -->
         <button class="ticket-links" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket1')">Ticket 1</button>
         <button class="ticket-links" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket2')">Ticket 2</button>
         <button class="ticket-links" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket3')">Ticket 3</button>
@@ -35,7 +35,7 @@
         <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="tab-content">
-                    <!-- function openTab(evt, tabs, tabContent, tabName)  -->
+                    <!-- function openTab(evt, tabs, content, tabName)  -->
                     <button class="ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'message')">Message</button>
                     <button class="ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'contact-info')">Contact Info</button>
                     <button class="ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'faq')">FAQ</button>
@@ -65,46 +65,430 @@
                 </div>
 
                 <div id="contact-info" class="ticket-content">
-                    <h3>Contact Info</h3>
-                    <p>Contact Info content</p> 
+                        <h3>CONTACT</h3>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    Name
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    John Doe
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    Department
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    Sales
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    Email
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    johndoe@gmail.com
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    Reports To
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    Ashley
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="solid"><div class="row">
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    Phone
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    123.456.7890
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    Notify Owner
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    No
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="solid"><div class="row">
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    Account
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    Deer Funds
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    Modified
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    Yesterday
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="solid"><div class="row">
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    Title
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    1 Hour
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    Created
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    March 02, 2017
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="solid">
+                        <h3>ADDRESS INFORMATION</h3>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    Street
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    1 Broad Street
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    PO Box
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    1300
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    City
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    Philadelphia
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    State
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    PA
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    Postal Code
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    19103
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    Country
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    US
+                                </div>
+                            </div>
+                        </div>
+                        <h3>TROUBLE TICKET HISTORY</h3>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-12 d-flex">
+                                <div class="col-3 d-inline spec-label">
+                                    Name
+                                </div>
+                                <div class="col-3 d-inline spec-label">
+                                    Status
+                                </div>
+                                <div class="col-3 d-inline spec-label">
+                                    Date & Time
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-12 d-flex">
+                                <div class="col-3 d-inline spec-info">
+                                    Trouble Ticket 1
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    Received
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    Received
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-12 d-flex">
+                                <div class="col-3 d-inline spec-info">
+                                    Trouble Ticket 2
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    Low
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    Low
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-12 d-flex">
+                                <div class="col-3 d-inline spec-info">
+                                    Trouble Ticket 3
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    Open
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    Open
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-12 d-flex">
+                                <div class="col-3 d-inline spec-info">
+                                    Trouble Ticket 4
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    1 Hour
+                                </div>
+                                <div class="col-3 d-inline spec-info">
+                                    1 Hour
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="solid">
                 </div>
 
                 <div id="faq" class="ticket-content">
-                    <h3>FAQ</h3>
-                    <p>Frequently Asked Questions</p>
+                    <div class="d-flex justify-content-end">
+                        <form class="search-faq">
+                            <input type="text" value="Search FAQs">
+                        </form>
+                    </div>
+                    <hr class="solid">
+                    <div class="faq-card">
+                        <div class="row">
+                            <div class="col-11">
+                                <h3>What is delyte?</h3>
+                                <div class="faq-answer">
+                                    Lorem ipsum dolor sit amet, has ea unum affert. At usu clita admodum, ponderum contentiones ea eum. Legere ignota sit te. Pri modo scripserit no. Eu dicat novum cum.
+                                </div>
+                            </div>
+                            <div class="col-1">
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="solid">
+                    <div class="faq-card">
+                        <div class="row">
+                            <div class="col-11">
+                                <h3>What is tags?</h3>
+                                <div class="faq-answer">
+                                    Lorem ipsum dolor sit amet, has ea unum affert. At usu clita admodum, ponderum contentiones ea eum. Legere ignota sit te. Pri modo scripserit no. Eu dicat novum cum.
+                                </div>
+                            </div>
+                            <div class="col-1">
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="solid">
+                    <div class="faq-card">
+                        <div class="row">
+                            <div class="col-11">
+                                <h3>What is an account?</h3>
+                                <div class="faq-answer">
+                                    Lorem ipsum dolor sit amet, has ea unum affert. At usu clita admodum, ponderum contentiones ea eum. Legere ignota sit te. Pri modo scripserit no. Eu dicat novum cum.
+                                </div>
+                            </div>
+                            <div class="col-1">
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="solid">
+                    <div class="faq-card">
+                        <div class="row">
+                            <div class="col-11">
+                                <h3>How do I assign a contact?</h3>
+                                <div class="faq-answer">
+                                    Lorem ipsum dolor sit amet, has ea unum affert. At usu clita admodum, ponderum contentiones ea eum. Legere ignota sit te. Pri modo scripserit no. Eu dicat novum cum.
+                                </div>
+                            </div>
+                            <div class="col-1">
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="solid">
+                    <div class="faq-card">
+                        <div class="row">
+                            <div class="col-11">
+                                <h3>How do I set ticket priority?</h3>
+                                <div class="faq-answer">
+                                    Lorem ipsum dolor sit amet, has ea unum affert. At usu clita admodum, ponderum contentiones ea eum. Legere ignota sit te. Pri modo scripserit no. Eu dicat novum cum.
+                                </div>
+                            </div>
+                            <div class="col-1">
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="solid">
+                    <div class="faq-card">
+                        <div class="row">
+                            <div class="col-11">
+                                <h3>Question Title Displayed Here?</h3>
+                                <div class="faq-answer">
+                                    Lorem ipsum dolor sit amet, has ea unum affert. At usu clita admodum, ponderum contentiones ea eum. Legere ignota sit te. Pri modo scripserit no. Eu dicat novum cum.
+                                </div>
+                            </div>
+                            <div class="col-1">
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="solid">
+                    <div class="faq-card">
+                        <div class="row">
+                            <div class="col-11">
+                                <h3>Question Title Displayed Here?</h3>
+                                <div class="faq-answer">
+                                    Lorem ipsum dolor sit amet, has ea unum affert. At usu clita admodum, ponderum contentiones ea eum. Legere ignota sit te. Pri modo scripserit no. Eu dicat novum cum.
+                                </div>
+                            </div>
+                            <div class="col-1">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="right-col">
+            <div class="right-col col-12 col-lg-4">
                 <div class="edit-btn-group">
-                    <div class="row">
-                        <div class="col-6"><button id="edit">Edit</button></div>
-                        <div class="col-6"><button id="change-status">Change Status</button></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6"><button id="merge">Merge</button></div>
-                        <div class="col-6"><button id="add-to-faq">Add to FAQ</button></div>
+                    <div class="row text-center">
+                        <div id="edit" class="col-5 offset-1"><button>Edit</button></div>
+                        <div id="change-status" class="col-5"><button>Change Status</button></div>
+                        <div id="merge" class="col-5 offset-1"><button>Merge</button></div>
+                        <div id="add-to-faq" class="col-5"><button>Add to FAQ</button></div>
                     </div>
                 </div>
 
                 <div class="follow-up-group">
                     <div class="row">
                         <div class="col-10 follow-up d-flex">
-                            <div class=""><input type="checkbox">Follow Up</div>
+                            <input type="checkbox"><div>Follow Up</div>
                             <div class="ml-auto">March 10, 2017</div>
                         </div>
-                        <div class="col-2 d-inline ml-auto">
+                        <div class="col-2 d-inline follow-up-btn-div">
                             <button id="schedule-follow-up" class="">btn</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="add-tags">
-                    <input type="text" value="Add Tags">
+                    <div class="row">
+                        <div class="col-10 follow-up d-flex">
+                            <input id="add-tags-input" type="text" value="Add Tags">
+                        </div>
+                        <div class="col-2 d-inline follow-up-btn-div">
+                            <button id="schedule-follow-up" class="">Add</button>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="ticket-specs">
-                    <h3>Login Issue</h3>
+                    <h3>LOGIN ISSUE</h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-5 spec-label">Ticket Duration</div>
+                            <div class="col-5 offset-1 spec-info">1 hour</div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-5 spec-label">Email Thread Status</div>
+                            <div class="col-5 offset-1 spec-info">Received</div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-5 spec-label">Priority</div>
+                            <div class="col-5 offset-1 spec-info">Low</div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-5 spec-label">Status</div>
+                            <div class="col-5 offset-1 spec-info">Open</div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-5 spec-label">Type</div>
+                            <div class="col-5 offset-1 spec-info">1 hour</div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-5 spec-label">Watchers</div>
+                            <div class="col-5 offset-1 spec-info">John Doe</div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-5 spec-label">Tags</div>
+                            <div class="col-5 offset-1 spec-info">General</div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-5 spec-label">Related Account</div>
+                            <div class="col-5 offset-1 spec-info"></div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-5 spec-label">Related Contact</div>
+                            <div class="col-5 offset-1 spec-info"></div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-5 spec-label">Email</div>
+                            <div class="col-5 offset-1 spec-info"></div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row">
+                            <div class="col-5 spec-label">Assigned To</div>
+                            <div class="col-5 offset-1 spec-info"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
