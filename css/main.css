@@ -187,11 +187,33 @@ hr.solid {
 }
 
 .follow-up {
+  padding: 1em 2em 1em 2em;
+  align-items: center;
   font-weight: 800;
   background-color: #ffffff;
   border: 1px solid #b9b9b9;
   border-right: none;
   border-radius: 0.4em 0em 0em 0.4em;
+}
+
+.follow-up input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  margin-right: 1em;
+  height: 1em;
+  width: 1em;
+  background-color: #eee;
+  border-radius: 0.2em;
+}
+
+#follow-up-date {
+  font-weight: 400;
 }
 
 .follow-up-btn-div {
