@@ -19,6 +19,11 @@ hr.solid {
   margin-bottom: 0.3em;
 }
 
+i {
+  color: #36404a;
+  align-items: center;
+}
+
 .band-search-bar {
   background-color: #36404a;
 }
@@ -41,30 +46,34 @@ hr.solid {
 
 /* Tabs for the different tickets */
 .tab-ticket {
-  overflow: hidden;
   border: none;
 }
 
-.tab-ticket button {
+.tab-ticket .ticket-links {
   color: #087D74;
   background-color: #0E978D;
-  float: left;
-  border: none;
-  outline: none;
   cursor: pointer;
   padding: 0.5em;
-  width: 10em;
+  width: 16em;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.tab-ticket button:hover {
+.tab-ticket button {
+  color: inherit;
+  background-color: inherit;
+  border: none;
 }
 
-.tab-ticket button.active {
+.tab-ticket .ticket-links.active {
   color: #16aa9c;
   background-color: #F4F8F7;
 }
+
+.tab-ticket i {
+  color: inherit;
+}
+.tab-ticket .ticket-links.active i {color: #006359;}
 
 .tab-ticket .ticket-add-new {
   color: #9BC6BD;
@@ -159,7 +168,6 @@ hr.solid {
 }
 
 .edit-btn-group button {
-  margin: 0em;
   background-color: inherit;
   border: none;
   color: #606060;
@@ -196,6 +204,7 @@ hr.solid {
   border-radius: 0.4em 0em 0em 0.4em;
 }
 
+/* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
 .follow-up input[type="checkbox"] {
   position: absolute;
   opacity: 0;
@@ -216,17 +225,16 @@ hr.solid {
   font-weight: 400;
 }
 
-.follow-up-btn-div {
-  background-color: #16aa9c;
-  border-radius: 0em 0.4em 0.4em 0em;
-}
-
 #schedule-follow-up {
   color: #ffffff;
   background-color: #16aa9c;
   border: none;
-  border-radius: 0.1em;
+  border-radius: 0em 0.4em 0.4em 0em;
   height: 4em;
+}
+
+#schedule-follow-up>.fa {
+  color: #ffffff;
 }
 
 #add-tags-input {

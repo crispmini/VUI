@@ -9,7 +9,8 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <!-- Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/main.js" ></script>
 </head>
@@ -23,12 +24,32 @@
 </div>
 
 <div class="page-content col-12">
-    <div class="tab-ticket">
+    <div class="tab-ticket d-flex">
         <!-- function openTab(evt, tabs, content, tabName)  -->
-        <button class="ticket-links" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket1')">Ticket 1</button>
-        <button class="ticket-links" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket2')">Ticket 2</button>
-        <button class="ticket-links" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket3')">Ticket 3</button>
-        <button class="ticket-add-new" onclick="newTicket()">Add New</button>
+        <div class="d-flex ticket-links justify-content-center" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket1')">
+            <div class="ml-auto">Ticket 1</div>
+            <button type="button" class="d-inline ml-auto" aria-label="Close">
+                <i class="fa fa-close float-right d-inline" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="d-flex ticket-links justify-content-center" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket2')">
+            <div class="ml-auto">Ticket 2</div>
+            <button type="button" class="d-inline ml-auto" aria-label="Close">
+                <i class="fa fa-close float-right d-inline" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="d-flex ticket-links justify-content-center" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket3')">
+            <div class="ml-auto">Ticket 3</div>
+            <button type="button" class="d-inline ml-auto" aria-label="Close">
+                <i class="fa fa-close float-right d-inline" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="d-flex ticket-links ticket-add-new justify-content-center" onclick="newTicket(event, 'ticket-links', 'ticket', 'ticket3')">
+            <div class="ml-auto">Add New</div>
+            <button type="button" class="d-inline ml-auto" aria-label="Close">
+                <i class="fa fa-plus float-right d-inline" aria-hidden="true"></i>
+            </button>
+        </div>
     </div>
 
     <div id="ticket1" class="ticket">
@@ -42,7 +63,7 @@
                 </div>
 
                 <div id="message" class="ticket-content">
-                    <h3>Help! Issues Logging In</h3>
+                    <h3>Help! Issues Logging In<a href="#"><i class="fa fa-paperclip float-right d-inline" aria-hidden="true"></i></a></h3>
                     <div class="message-content">
                         <div class="row">
                             <div class="col-12">
@@ -401,33 +422,31 @@
             <div class="right-col col-12 col-lg-4">
                 <div class="edit-btn-group">
                     <div class="row text-center">
-                        <div id="edit" class="col-5 offset-1"><button>Edit</button></div>
-                        <div id="change-status" class="col-5"><button>Change Status</button></div>
-                        <div id="merge" class="col-5 offset-1"><button>Merge</button></div>
-                        <div id="add-to-faq" class="col-5"><button>Add to FAQ</button></div>
+                        <button id="edit" class="col-5 offset-1">Edit</button>
+                        <button id="change-status" class="col-5">Change Status</button>
+                        <button id="merge" class="col-5 offset-1"><i class="fa fa-shuffle"></i>Merge</button>
+                        <button id="add-to-faq" class="col-5">Add to FAQ</button>
                     </div>
                 </div>
 
                 <div class="follow-up-group">
                     <div class="row">
-                        <div class="col-10 follow-up d-flex">
+                        <div class="col-11 follow-up d-flex">
                             <input type="checkbox"><span class="checkmark"></span><div class="d-inline">Follow Up</div>
                             <div id="follow-up-date" class="ml-auto">April 10, 2017</div>
                         </div>
-                        <div class="col-2 d-inline follow-up-btn-div">
-                            <button id="schedule-follow-up" class="">btn</button>
-                        </div>
+                        <button id="schedule-follow-up" class="text-center col-1 d-inline">
+                            <i class="fa fa-calendar-check-o"></i>
+                        </button>
                     </div>
                 </div>
 
                 <div class="add-tags">
                     <div class="row">
-                        <div class="col-10 follow-up d-flex">
+                        <div class="col-11 follow-up d-flex">
                             <input id="add-tags-input" type="text" value="Add Tags">
                         </div>
-                        <div class="col-2 d-inline follow-up-btn-div">
-                            <button id="schedule-follow-up" class="">Add</button>
-                        </div>
+                        <button id="schedule-follow-up" class="col-1 d-inline text-center">Addddd</button>
                     </div>
                 </div>
 

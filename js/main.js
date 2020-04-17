@@ -28,6 +28,7 @@ function openTab(evt, tabs, content, tabName) {
     }
     
     document.getElementById(tabName).style.display = "block";
+    console.log(evt.currentTarget.className);
     evt.currentTarget.className += " active";
   }
 
