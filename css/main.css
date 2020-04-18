@@ -8,20 +8,19 @@ body {
 }
 
 h3 {
-  margin: 0.4em 0.4em 0.8em 0.4em;
+  margin: 0.4em;
   color: #006359;
   font-size: 1.2rem;
   font-weight: 800;
 }
 
-hr.solid {
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
-}
-
 i {
   color: #36404a;
   align-items: center;
+}
+
+hr.solid {
+  margin: 0.3em;
 }
 
 .band-search-bar {
@@ -136,6 +135,10 @@ i {
   border-radius: 0.5em;
 }
 
+.message-content i {
+  color:#ffffff;
+}
+
 #message-date {
   color: #9DA1A4;
 }
@@ -152,6 +155,11 @@ i {
 #comment {
   padding-left: 3em;
   padding-right: 3em;
+  font-weight: 600;
+}
+
+.fa-window-minimize {
+  color: #b9b9b9;
 }
 
 .right-col > div {
@@ -195,7 +203,6 @@ i {
 }
 
 .follow-up {
-  padding: 1em 2em 1em 2em;
   align-items: center;
   font-weight: 800;
   background-color: #ffffff;
@@ -205,6 +212,7 @@ i {
 }
 
 /* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+/* Hide the browser's default checkbox */
 .follow-up input[type="checkbox"] {
   position: absolute;
   opacity: 0;
@@ -213,6 +221,7 @@ i {
   width: 0;
 }
 
+/* Create a custom checkbox */
 .checkmark {
   margin-right: 1em;
   height: 1em;
@@ -221,20 +230,32 @@ i {
   border-radius: 0.2em;
 }
 
+.checkmark:hover {
+  background-color: blue;
+}
+
 #follow-up-date {
   font-weight: 400;
 }
 
 #schedule-follow-up {
+  padding: 1em;
+  padding-left: 1.2em;
   color: #ffffff;
   background-color: #16aa9c;
   border: none;
   border-radius: 0em 0.4em 0.4em 0em;
   height: 4em;
+  font-weight: 600;
 }
 
 #schedule-follow-up>.fa {
   color: #ffffff;
+}
+
+.fa-tag {
+  margin-right: 1em;
+  color: #b9b9b9;
 }
 
 #add-tags-input {
@@ -248,9 +269,19 @@ i {
   border-radius: 0.4em;
 }
 
+.ticket-specs h3 {
+  padding-bottom: 1em;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
 .spec-label {
   font-size: 0.8rem;
   font-weight: 800;
+}
+
+.faq-card {
+  margin: 1em;
 }
 
 .search-faq {
@@ -261,13 +292,22 @@ i {
 }
 
 .search-faq input {
-  margin-left: 1em;
-  margin-right: 1em;
   border: 0em;
   color: #36404a;
   font-size: 0.8em;
 }
 
+.fa-search {
+  padding-top: 0.3em;
+  color: #b9b9b9;
+}
+
 .faq-answer {
-  margin: 0.8em;
+  margin-left: 0.8em;
+  margin-right: 4em;
+}
+
+.fa-chevron-right {
+  padding-right: 1em;
+  color: #8FB3AF;
 }
