@@ -79,15 +79,6 @@ hr.solid {
   background-color: #0C8B80;
 }
 
-/* The ticket */
-.ticket {
-  display: none;
-  padding: 2em;
-  background-color: #f4f8f7;
-  border: 1px solid #f4f8f7;
-  border-top: none;
-}
-
 /* Tabs of the contents of a ticket */
 .tab-content {
   overflow: hidden;
@@ -95,6 +86,7 @@ hr.solid {
 }
 
 .tab-content button {
+  margin-right: -1em;
   color: #b9b9b9;
   background-color: #f2f2f2;
   border: 1px solid #b9b9b9;
@@ -115,6 +107,15 @@ hr.solid {
   background-color: #fff;
 }
 
+/* The ticket */
+.ticket {
+  display: none;
+  padding: 2em;
+  background-color: #f4f8f7;
+  border: 1px solid #f4f8f7;
+  border-top: none;
+}
+
 /* The ticket contents */
 .ticket-content {
   display: none;
@@ -125,6 +126,15 @@ hr.solid {
 }
 
 /* Message */
+@media (min-width: 992px){
+  #message {
+    height: 50.4em;
+  }
+
+  #contact-info {
+    height: 50.4em;
+  }
+}
 
 .message-content {
   margin: 0.4em;
@@ -160,6 +170,19 @@ hr.solid {
 
 .fa-window-minimize {
   color: #b9b9b9;
+}
+
+#faq {
+  border-bottom: none;
+  border-radius: 0em 0.5em 0em 0em;
+}
+
+@media (min-width: 1754px){
+  #faq {
+    height: 50.4em;
+    border: 1px solid #b9b9b9;
+    border-radius: 0em 0.5em 0.5em 0.5em;
+  }
 }
 
 .right-col > div {

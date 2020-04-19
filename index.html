@@ -53,14 +53,14 @@
     </div>
 
     <div id="ticket1" class="ticket">
+        <div class="tab-content">
+            <!-- function openTab(evt, tabs, content, tabName)  -->
+            <button class="d-inline ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'message')">Message</button>
+            <button class="d-inline ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'contact-info')">Contact Info</button>
+            <button class="d-inline ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'faq')">FAQ</button>
+        </div>
         <div class="row">
-            <div class="col-12 col-lg-8">
-                <div class="tab-content">
-                    <!-- function openTab(evt, tabs, content, tabName)  -->
-                    <button class="ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'message')">Message</button>
-                    <button class="ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'contact-info')">Contact Info</button>
-                    <button class="ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'faq')">FAQ</button>
-                </div>
+                <div class="col-12 col-lg-8">
 
                 <div id="message" class="ticket-content">
                     <h3>Help! Issues Logging In<a href="#"><i class="fa fa-paperclip float-right d-inline" aria-hidden="true"></i></a></h3>
