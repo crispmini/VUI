@@ -26,25 +26,25 @@
 <div class="page-content col-12">
     <div class="tab-ticket d-flex">
         <!-- function openTab(evt, tabs, content, tabName)  -->
-        <div class="d-flex ticket-links justify-content-center" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket1')">
+        <div id="ticket1" class="d-flex ticket-links justify-content-center" >
             <div class="ml-auto">Ticket 1</div>
             <button type="button" class="d-inline ml-auto" aria-label="Close">
                 <i class="fa fa-close float-right d-inline" aria-hidden="true"></i>
             </button>
         </div>
-        <div class="d-flex ticket-links justify-content-center" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket2')">
+        <div id="ticket2" class="d-flex ticket-links justify-content-center" >
             <div class="ml-auto">Ticket 2</div>
             <button type="button" class="d-inline ml-auto" aria-label="Close">
                 <i class="fa fa-close float-right d-inline" aria-hidden="true"></i>
             </button>
         </div>
-        <div class="d-flex ticket-links justify-content-center" onclick="openTab(event, 'ticket-links', 'ticket', 'ticket3')">
+        <div id="ticket3" class="d-flex ticket-links justify-content-center" >
             <div class="ml-auto">Ticket 3</div>
             <button type="button" class="d-inline ml-auto" aria-label="Close">
                 <i class="fa fa-close float-right d-inline" aria-hidden="true"></i>
             </button>
         </div>
-        <div class="d-flex ticket-links ticket-add-new justify-content-center" onclick="newTicket(event, 'ticket-links', 'ticket', 'ticket3')">
+        <div id="add-new-ticket" class="d-flex ticket-links ticket-add-new justify-content-center" onclick="newTicket(event, 'ticket-links', 'ticket', 'ticket3')">
             <div class="ml-auto">Add New</div>
             <button type="button" class="d-inline ml-auto" aria-label="Close">
                 <i class="fa fa-plus float-right d-inline" aria-hidden="true"></i>
@@ -52,17 +52,17 @@
         </div>
     </div>
 
-    <div id="ticket1" class="ticket">
+    <div id="ticket" class="ticket">
         <div class="tab-content">
             <!-- function openTab(evt, tabs, content, tabName)  -->
-            <button class="d-inline ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'message')">Message</button>
-            <button class="d-inline ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'contact-info')">Contact Info</button>
-            <button class="d-inline ticket-content-links" onclick="openTab(event, 'ticket-content-links', 'ticket-content', 'faq')">FAQ</button>
+            <button id="message" class="d-inline ticket-content-links">Message</button>
+            <button id="contact-info" class="d-inline ticket-content-links">Contact Info</button>
+            <button id="faq" class="d-inline ticket-content-links">FAQ</button>
         </div>
         <div class="row">
                 <div class="col-12 col-lg-8">
 
-                <div id="message" class="ticket-content">
+                <div id="message-d" class="ticket-content">
                     <h3>Help! Issues Logging In<a href="#"><i class="fa fa-paperclip float-right d-inline" aria-hidden="true"></i></a></h3>
                     <div class="message-content">
                         <div class="row">
@@ -85,7 +85,7 @@
                     </div>
                 </div>
 
-                <div id="contact-info" class="ticket-content">
+                <div id="contact-info-d" class="ticket-content">
                         <h3>CONTACT<a href="#"><i class="fa fa-window-minimize float-right d-inline" aria-hidden="true"></i></a></h3>
                         <hr class="solid">
                         <div class="row">
@@ -312,7 +312,7 @@
                         <hr class="solid">
                 </div>
 
-                <div id="faq" class="ticket-content">
+                <div id="faq-d" class="ticket-content">
                     <div class="d-flex justify-content-end">
                         <form class="search-faq">
                             <div class="container">
@@ -394,71 +394,75 @@
             </div>
 
             <div class="right-col col-12 col-lg-4">
-                <div class="edit-btn-group">
-                    <div class="row">
-                        <button id="edit" class="col-5 offset-1">
-                            <div class="row">
-                                <div class="col-1 offset-1">
-                                    <i class="fa fa-edit d-inline" aria-hidden="true"></i>
-                                </div>
-                                <div class="offset-1">
-                                    Edit
-                                </div>
+                <div class="edit-btn-group row">
+                    <button id="edit" class="col-5 offset-1">
+                        <div class="row">
+                            <div class="col-1 offset-1">
+                                <i class="fa fa-edit d-inline" aria-hidden="true"></i>
                             </div>
-                        </button>
-                        <button id="change-status" class="col-5">
-                            <div class="row">
-                                <div class="col-1 offset-1">
-                                    <i class="fa fa-exclamation-circle d-inline" aria-hidden="true"></i>
-                                </div>
-                                <div class="offset-1">
-                                    Change Status
-                                </div>
+                            <div class="offset-1">
+                                Edit
                             </div>
-                        </button>
-                        <button id="merge" class="col-5 offset-1">
-                            <div class="row">
-                                <div class="col-1 offset-1">
-                                    <i class="fa fa-random d-inline" aria-hidden="true"></i>
-                                </div>
-                                <div class="offset-1">
-                                    Merge
-                                </div>
+                        </div>
+                    </button>
+                    <button id="change-status" class="col-5">
+                        <div class="row">
+                            <div class="col-1 offset-1">
+                                <i class="fa fa-exclamation-circle d-inline" aria-hidden="true"></i>
                             </div>
-                        </button>
-                        <button id="add-to-faq" class="col-5">
-                            <div class="row">
-                                <div class="col-1 offset-1">
-                                    <i class="fa fa-question-circle d-inline" aria-hidden="true"></i>
-                                </div>
-                                <div class="offset-1">
-                                    Add to FAQ
-                                </div>
+                            <div class="offset-1">
+                                Change Status
                             </div>
-                        </button>
-                    </div>
+                        </div>
+                    </button>
+                    <button id="merge" class="col-5 offset-1">
+                        <div class="row">
+                            <div class="col-1 offset-1">
+                                <i class="fa fa-random d-inline" aria-hidden="true"></i>
+                            </div>
+                            <div class="offset-1">
+                                Merge
+                            </div>
+                        </div>
+                    </button>
+                    <button id="add-to-faq" class="col-5">
+                        <div class="row">
+                            <div class="col-1 offset-1">
+                                <i class="fa fa-question-circle d-inline" aria-hidden="true"></i>
+                            </div>
+                            <div class="offset-1">
+                                Add to FAQ
+                            </div>
+                        </div>
+                    </button>
                 </div>
 
-                <div class="follow-up-group">
-                    <div class="row">
-                        <div class="col-11 follow-up d-flex">
-                            <input type="checkbox"><span class="checkmark"></span><div class="d-inline">Follow Up</div>
-                            <div id="follow-up-date" class="ml-auto">April 10, 2017</div>
+                <form class="form-inline follow-up-group">
+                    <div class="follow-up col-11">
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="follow-up-check" name="follow-up-checkbox">
+                            <label class="custom-control-label" for="follow-up-check">Follow Up</label>
                         </div>
-                        <button id="schedule-follow-up" class="text-center col-1 d-inline">
-                            <i class="fa fa-calendar-check-o"></i>
-                        </button>
+                        <div class="custom-control custom-control-inline float-right">
+                            <div id="follow-up-date" class="">April 10, 2017</div>
+                        </div>
                     </div>
-                </div>
+                    <button id="schedule-follow-up" class="col-1 text-center d-inline">
+                        <i class="fa fa-calendar-check-o"></i>
+                    </button>
+                </form>
 
-                <div class="add-tags">
-                    <div class="row">
-                        <div class="col-10 follow-up d-flex">
-                            <i class="fa fa-tag" aria-hidden="true"></i><input id="add-tags-input" type="text" value="Add Tags">
+                <form class="form-inline add-tags-group">
+                    <div class="add-tags col-10">
+                        <div class="custom-control custom-control-inline">
+                            <i class="fa fa-tag fa-large" aria-hidden="true"></i>
+                            <input id="add-tags-input" type="text" value="Add Tags">
                         </div>
-                        <button id="schedule-follow-up" class="col-2 d-inline text-center">Add</button>
                     </div>
-                </div>
+                    <button id="schedule-follow-up" class="col-2 text-center d-inline">
+                        Add
+                    </button>
+                </form>
 
                 <div class="ticket-specs">
                     <h3>LOGIN ISSUE</h3>
@@ -521,14 +525,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="ticket2" class="ticket">
-        <h3>Ticket 2</h3>
-    </div>
-
-    <div id="ticket3" class="ticket">
-        <h3>Ticket 3</h3>
     </div>
 </div>
 

@@ -127,11 +127,11 @@ hr.solid {
 
 /* Message */
 @media (min-width: 992px){
-  #message {
+  #message-d {
     height: 50.4em;
   }
 
-  #contact-info {
+  #contact-info-d {
     height: 50.4em;
   }
 }
@@ -172,13 +172,13 @@ hr.solid {
   color: #b9b9b9;
 }
 
-#faq {
+#faq-d {
   border-bottom: none;
   border-radius: 0em 0.5em 0em 0em;
 }
 
 @media (min-width: 1754px){
-  #faq {
+  #faq-d {
     height: 50.4em;
     border: 1px solid #b9b9b9;
     border-radius: 0em 0.5em 0.5em 0.5em;
@@ -225,8 +225,13 @@ hr.solid {
   border-top: 1px solid #d3d3d3;
 }
 
+.follow-up-group {
+  padding: 1em;
+}
+
 .follow-up {
-  align-items: center;
+  padding: 1em;
+  padding-left: 2em;
   font-weight: 800;
   background-color: #ffffff;
   border: 1px solid #b9b9b9;
@@ -234,27 +239,23 @@ hr.solid {
   border-radius: 0.4em 0em 0em 0.4em;
 }
 
-/* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
-/* Hide the browser's default checkbox */
-.follow-up input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+.custom-control-label:before{
+  margin-top: -0.2em;
+  background-color: gainsboro;
+  border: none;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+  background-color:#16aa9c;
 }
 
-/* Create a custom checkbox */
-.checkmark {
-  margin-right: 1em;
-  height: 1em;
-  width: 1em;
-  background-color: #eee;
-  border-radius: 0.2em;
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #16aa9c;
+  background-color: #16aa9c;
 }
 
-.checkmark:hover {
-  background-color: blue;
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+  margin-top: -0.2em;
 }
 
 #follow-up-date {
@@ -276,8 +277,22 @@ hr.solid {
   color: #ffffff;
 }
 
+.add-tags-group {
+  padding: 1em;
+}
+
+.add-tags {
+  padding: 1em;
+  background-color: #ffffff;
+  border: 1px solid #b9b9b9;
+  border-right: none;
+  border-radius: 0.4em 0em 0em 0.4em;
+}
+
 .fa-tag {
+  margin-left: -0.5em;
   margin-right: 1em;
+  font-size: 1rem;
   color: #b9b9b9;
 }
 
