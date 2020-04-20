@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* elements */
 body {
   font-family: Arial;
   font-size: 0.8rem;
@@ -23,6 +24,7 @@ hr.solid {
   margin: 0.3em;
 }
 
+/* Search bar at top of page */
 .band-search-bar {
   background-color: #36404a;
 }
@@ -72,7 +74,9 @@ hr.solid {
 .tab-ticket i {
   color: inherit;
 }
-.tab-ticket .ticket-links.active i {color: #006359;}
+.tab-ticket .ticket-links.active i {
+  color: #006359;
+}
 
 .tab-ticket .ticket-add-new {
   color: #9BC6BD;
@@ -86,7 +90,7 @@ hr.solid {
 }
 
 .tab-content button {
-  margin-right: -1em;
+  margin-right: -0.4em;
   color: #b9b9b9;
   background-color: #f2f2f2;
   border: 1px solid #b9b9b9;
@@ -99,8 +103,18 @@ hr.solid {
   font-weight: 600;
 }
 
+/* FireFox did not need the margins adjusted to reduce an interior gap between ticket content tabs */
+@-moz-document url-prefix() {
+  .tab-content button {
+    margin-right: 0em;
+  }
+}
+
+/* Hover over tab style
+
 .tab-content button:hover {
 }
+*/
 
 .tab-content button.active {
   color: #a3a3a3;
@@ -125,17 +139,15 @@ hr.solid {
   border-radius: 0em 0.5em 0.5em 0.5em;
 }
 
-/* Message */
+/* Message and Contact Info extension */
 @media (min-width: 992px){
-  #message-d {
-    height: 50.4em;
-  }
-
+  #message-d,
   #contact-info-d {
-    height: 50.4em;
+    height: 48.4em;
   }
 }
 
+/* Message */
 .message-content {
   margin: 0.4em;
   padding: 1em;
@@ -168,29 +180,69 @@ hr.solid {
   font-weight: 600;
 }
 
+/* Contact Info */
 .fa-window-minimize {
   color: #b9b9b9;
 }
 
+/* FAQ */
 #faq-d {
   border-bottom: none;
   border-radius: 0em 0.5em 0em 0em;
 }
 
+/* extension for faq display */
 @media (min-width: 1754px){
   #faq-d {
-    height: 50.4em;
+    height: 48.4em;
     border: 1px solid #b9b9b9;
     border-radius: 0em 0.5em 0.5em 0.5em;
   }
 }
 
-.right-col > div {
-  margin: 1em;
-  padding: 1em;
+.spec-label {
+  font-size: 0.8rem;
+  font-weight: 800;
 }
 
+.faq-card {
+  margin: 1em;
+}
+
+.search-faq {
+  margin: 1em;
+  border: 1px solid #b9b9b9;
+  border-radius: 1em;
+  line-height: 1.4em;
+}
+
+.search-faq input {
+  border: 0em;
+  color: #36404a;
+  font-size: 0.8em;
+}
+
+.fa-search {
+  padding-top: 0.3em;
+  color: #b9b9b9;
+}
+
+.faq-answer {
+  margin-left: 0.8em;
+  margin-right: 4em;
+}
+
+.fa-chevron-right {
+  padding-right: 1em;
+  color: #8FB3AF;
+}
+
+/* Right Column UI */
+
+/* Edit, Change Status, Merge, Add to FAQ card */
 .edit-btn-group {
+  margin: 0em 1em 1em 1em;
+  padding: 1em;
   color: #606060;
   font-weight: 800;
   background-color: #ffffff;
@@ -225,6 +277,7 @@ hr.solid {
   border-top: 1px solid #d3d3d3;
 }
 
+/* Follow Up Scheduling card */
 .follow-up-group {
   padding: 1em;
 }
@@ -239,6 +292,7 @@ hr.solid {
   border-radius: 0.4em 0em 0em 0.4em;
 }
 
+/* customize checkbox */
 .custom-control-label:before{
   margin-top: -0.2em;
   background-color: gainsboro;
@@ -277,6 +331,7 @@ hr.solid {
   color: #ffffff;
 }
 
+/* Adding Tags card */
 .add-tags-group {
   padding: 1em;
 }
@@ -301,7 +356,10 @@ hr.solid {
   color: #9DA1A4;
 }
 
+/* Ticket Specs card */
 .ticket-specs {
+  margin: 1em;
+  padding: 1em;
   background-color: #ffffff;
   border: 1px solid #b9b9b9;
   border-radius: 0.4em;
@@ -311,41 +369,4 @@ hr.solid {
   padding-bottom: 1em;
   font-size: 1.2em;
   font-weight: 800;
-}
-
-.spec-label {
-  font-size: 0.8rem;
-  font-weight: 800;
-}
-
-.faq-card {
-  margin: 1em;
-}
-
-.search-faq {
-  margin: 1em;
-  border: 1px solid #b9b9b9;
-  border-radius: 1em;
-  line-height: 1.4em;
-}
-
-.search-faq input {
-  border: 0em;
-  color: #36404a;
-  font-size: 0.8em;
-}
-
-.fa-search {
-  padding-top: 0.3em;
-  color: #b9b9b9;
-}
-
-.faq-answer {
-  margin-left: 0.8em;
-  margin-right: 4em;
-}
-
-.fa-chevron-right {
-  padding-right: 1em;
-  color: #8FB3AF;
 }

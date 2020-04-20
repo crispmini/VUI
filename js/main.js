@@ -1,5 +1,8 @@
 /* JS Document */
 
+/* Initiate */
+//Open first ticket, and open it's first tab, message.
+//Then add event listeners to the ticket and content tabs
 function init() {
   var i, ticketLinks, ticket, ticketContentLinks, ticketContent;
 
@@ -22,6 +25,9 @@ function init() {
   document.getElementById("faq").addEventListener("click", function(){ tabContent("faq")});
 }
 
+/* Ticket tab */
+//deactivates all ticket tabs, and then activates the ticket tab passed
+//calls function to open the message
 function tabTicket(ticket) {
   ticketLinks = document.getElementsByClassName('ticket-links');
   
@@ -34,6 +40,9 @@ function tabTicket(ticket) {
   tabContent("message");
 }
 
+/* Content tab */
+//deactivates all content tabs, and then activates the content tab passed
+//calls function to display the content block
 function tabContent(content) {
   ticketContentLinks = document.getElementsByClassName('ticket-content-links');
 
@@ -46,6 +55,8 @@ function tabContent(content) {
   openContent(content+"-d");
 }
 
+/* Open Content block */
+//hides all content blocks and then shows the content block passed
 function openContent(content) {
   ticketContent = document.getElementsByClassName('ticket-content');
 
@@ -56,12 +67,16 @@ function openContent(content) {
   document.getElementById(content).style.display = "block";
 }
 
+/* Delete New Ticket */
+function deleteTicket() {
+  console.log("I would remove ticket tab and contents from display and make delete call to the DB");
+}
+
+/* Create New Ticket */
+//I was hoping to get to this
 function newTicket() {
   console.log("I would initialize a new ticket in the DB and display it for editting. Would result in either a new page or pop-up form.");
 }
 
-function msgLoad() {
-
-}
-
+/* call init function to begin app */
 window.onload = init;
